@@ -1,8 +1,8 @@
 #Specify base image
-FROM node:alpine
+FROM node:alpine as builder
 
 #Install some dependencies
-COPY ./ ./
+#COPY ./ ./
 RUN npm install
 
 #Default command
